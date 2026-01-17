@@ -3,8 +3,8 @@ name: "Autosend"
 on:
   push: 
     branches: main
-  schedule: 
-    - cron: '25 09 * * *' # 每天9点25分自动执行
+  schedule:
+    - cron: '25 09 * * 0' # 每周日早上 9:25 自动执行
   workflow_dispatch:
 
 jobs:
